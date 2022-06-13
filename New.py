@@ -185,7 +185,13 @@ def banner():
 •  WHATSAPP:085758862225  •'''
                                                         
 """%(h))
-    
+user = "meta"
+pwas = "metaroyid"
+def cek_pw():
+    try:
+        open(".ini_pw.txt", "r").read()
+    except FileNotFoundError:
+        os.system("clear")    
 
 # VALIDASI TOKEN
 def login():
