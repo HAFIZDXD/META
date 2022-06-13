@@ -367,28 +367,29 @@ def login_token():
     except requests.exceptions.ConnectionError:
         jalan(f"\n {N}[{M}!{N}] Sorry No connection");yayanxd()
 # ------- LOGIN COOKIE --------
-def login_cookie():
-    cookie = input("\n %s[%s?%s] Enter Cookies : %s"% (N,K,N,A))
-    loading()
-    try:
-        ewee = ubah_cok(cookie)
-        token = ewee.get('token')
-        nama = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 11; Realme 3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.128 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cooki})
-        open('.cokie.txt', 'a').write(cookie)
-        open('.token.txt', 'a').write(token)
-        jalan('\n %s[%s✓%s] Sign in Cookie %sSuccessful%s'%(N,H,N,H,N));time.sleep(3)
-        jalan(' %s[%s•%s] Welcome %s%s%s'%(N,H,N,K,nama,N));time.sleep(3)
-        jalan(' [%s!%s] Please use this sc properly, we are not responsible if this sc is misused...\n [%s•%s] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC META.'%(M,N,H,N));time.sleep(3)
-        input('\n [%sPRESS ENTER%s] to continue'%(H,N))
-        os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini')
-        moch_yayan()
-    except AttributeError:
-        jalan('\n %s[%s×%s] Sign in Cookie %sVailed%s'%(N,M,N,M,N));time.sleep(1);yayanxd()
-    except UnboundLocalError:
-        jalan('\n %s[%s×%s] Sign in Cookie %sVailed%s'%(N,M,N,M,N));time.sleep(1);yayanxd()
-    except requests.exceptions.ConnectionError:
-        jalan('\n %s[%s!%s] Sorry No connection'%(N,M,N));time.sleep(1);yayanxd()
-#LOGIN PASSWORD
+
+#LOGIN PASSWORDcik2=mark(cik ,style='cyan')
+			sol().print(cik2)
+			cooki=input("Cookie : ")
+			open('.cookie.txt','w').write(cooki)
+			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 11; Realme 3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.128 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cooki}) 
+			find_token = re.search("(EAAG\w+)", data.text)
+			ken=open(".token.txt", "w").write(find_token.group(1))
+			cokrom=open('.cookie.txt','r').read()
+			tokrom=open('.token.txt','r').read()
+			tes = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokrom,cookies={'cookie': cokrom})
+			tes3 = json.loads(tes.text)['id']
+			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2)
+			exit()
+		except Exception as e: 
+			os.system("rm -f .token.txt")
+			os.system("rm -rf .cookie.txt")
+			cik='# EXPIRED COOKIE OR CHECKPOINT ACCOUNT '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2) 
+			exit()
 def login_passwod():
     session=requests.Session()
     user = input(f"\n {N}[{H}•{N}] Enter ID/Username : {H}")
