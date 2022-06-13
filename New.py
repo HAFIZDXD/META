@@ -158,6 +158,14 @@ cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 # CLEAR
 def clear():
 	os.system('clear')
+
+user = "meta"
+pwas = "metaroyid"
+def cek_pw():
+    try:
+        open(".ini_pw.txt", "r").read()
+    except FileNotFoundError:
+        os.system("clear")
 # BACK
 def back():
 	login()
