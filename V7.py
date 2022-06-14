@@ -229,9 +229,9 @@ def menu(my_name,my_id):
 		dump_publik()
 	elif jh in ['2','02']:
 		multidump()
-        elif jh in ['3','03']:
+elif jh in ['3','03']:
 		os.system('xdg-open https://chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql')
-	elif jh in ['4','04']:
+elif jh in ['4','04']:
 		os.system('xdg-open https://wa.me/6285758862225')
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
