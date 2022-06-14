@@ -219,20 +219,23 @@ def menu(my_name,my_id):
 	print('%s[•] IP  %s'%(P,str(sh['origin'])))
 	print('%s[•] ID  %s'%(P,my_id))
 	linex()
-	print('%s[%s01%s] %sCRACK PUBLIK'%(P,P,P,P));time.sleep(0.02)
-	print('%s[%s02%s] %sCRACK %sMASSAL'%(P,P,P,P,P));time.sleep(0.02)
-	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s01%s] %sPUBLIC IDS CRACK'%(P,P,P,P));time.sleep(0.02)
+	print('%s[%s02%s] %sMULTIPLE IDS %sCRACK'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s03%s] %sJOIN MY TELEGRAM CHANNEL%s'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s04%s] %sSUBSCRIBED ON MY YOUTUBE%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
-	jh = input(P+'['+P+'●'+P+']  MENU  ')
+	jh = input(P+'['+P+'â—'+P+']  MENU  ')
 	if jh in ['1','01']:
 		dump_publik()
 	elif jh in ['2','02']:
 		multidump()
-elif jh in ['4','04']:
-		os.system('xdg-open https://wa.me/6285758862225')
+	elif jh in ['3','03']:
+		subprocess.check_output(["am", "start", "https://t.me/CHIGOZIEW0RLDWIDE"])
+	elif jh in ['4','04']:
+		subprocess.check_output(["am", "start", "https://youtube.com/channel/UCFLeodw8gk9oNcnttsOrO3A"])
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
-		print(h+'  ['+h+'●'+h+']  HOLD●●●')
+		print(h+'  ['+h+'â—'+h+']  HOLDâ—â—â—')
 		time.sleep(1)
 		print('# EXIT SUCCESSFULLY')
 		exit()
