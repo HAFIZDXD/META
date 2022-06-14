@@ -158,11 +158,11 @@ def banner():
 ╚═╝╚═╝╚═══╝╚╝─╚╝╚╝╚═╝╚═══╝──╚╝──
 
 ╔══════════════════════════════════════════╗
-║ Creator   : HafizdXD                      ║
-║ Github    : https://github.com/HafizdXD   ║
-║ Whatsapp  : +6285758862225                ║
-║ Version   : V7                            ║
-║ Status SC : Premium                       ║
+║ Creator   : HafizdXD                     ║
+║ Github    : https://github.com/HafizdXD  ║
+║ Whatsapp  : +6285758862225               ║
+║ Version   : V7                           ║
+║ Status SC :\033[32mPremium                      ║
 ╚══════════════════════════════════════════╝
 
 """%(P))
