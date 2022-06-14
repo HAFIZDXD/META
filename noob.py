@@ -162,7 +162,7 @@ def banner():
 ║ Github    : https://github.com/HafizdXD  ║
 ║ Whatsapp  : +6285758862225               ║
 ║ Version   : V7                           ║
-║ Status SC :\033[32mPremium                      ║
+║ Status SC :\033[32mPremium               ║
 ╚══════════════════════════════════════════╝
 
 """%(P))
@@ -193,7 +193,7 @@ def login():
 def login_lagi334():
 	banner()
 	try:
-		cookie=input("%s [●] ADD COOKIES %s"%(P,P))
+		cookie=input("%s [•] MASUKKAN COOKIE%s"%(P,P))
 		linex()
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
@@ -205,7 +205,7 @@ def login_lagi334():
 		exit()
 	except Exception as e:
 		os.system("rm -f .cok.txt")
-		print('%s# COOKIES TEMPORARY EXPIRED '%(M))
+		print('%s# COOKIES EXPIRED '%(M))
 		exit()
 		
 
@@ -215,14 +215,14 @@ def menu(my_name,my_id):
 	except:sh = {'origin':'-'}
 	banner()
 	linex()
-	print('%s[%s●%s] %sCONNECTED'%(P,P,P,P));time.sleep(0.02)
-	print('%s[●] IP  %s'%(P,str(sh['origin'])))
-	print('%s[●] ID  %s'%(P,my_id))
+	print('%s[%s•%s] %s\033[32mOnline'%(P,P,P,P));time.sleep(0.02)
+	print('%s[•] IP  %s'%(P,str(sh['origin'])))
+	print('%s[•] ID  %s'%(P,my_id))
 	linex()
-	print('%s[%s01%s] %sPUBLIC IDS CRACK'%(P,P,P,P));time.sleep(0.02)
-	print('%s[%s02%s] %sMULTIPLE IDS %sCRACK'%(P,P,P,P,P));time.sleep(0.02)
-	print('%s[%s03%s] %sJOIN MY TELEGRAM CHANNEL%s'%(P,P,P,P,P));time.sleep(0.02)
-	print('%s[%s04%s] %sSUBSCRIBED ON MY YOUTUBE%s'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s01%s] %sCRACK PUBLIK'%(P,P,P,P));time.sleep(0.02)
+	print('%s[%s02%s] %sCRACK %sMASSAL'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s04%s] %sCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
 	jh = input(P+'['+P+'●'+P+']  MENU  ')
 	if jh in ['1','01']:
@@ -230,9 +230,9 @@ def menu(my_name,my_id):
 	elif jh in ['2','02']:
 		multidump()
 	elif jh in ['3','03']:
-		subprocess.check_output(["am", "start", "https://t.me/CHIGOZIEW0RLDWIDE"])
+		subprocess.check_output(["am", "start", "https://chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql"])
 	elif jh in ['4','04']:
-		subprocess.check_output(["am", "start", "https://youtube.com/channel/UCFLeodw8gk9oNcnttsOrO3A"])
+		subprocess.check_output(["am", "start", "wa.me/6285758862225"])
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
 		print(h+'  ['+h+'●'+h+']  HOLD●●●')
