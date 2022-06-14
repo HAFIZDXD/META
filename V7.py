@@ -222,7 +222,7 @@ def menu(my_name,my_id):
 	print('%s[%s01%s] %sCRACK PUBLIK'%(P,P,P,P));time.sleep(0.02)
 	print('%s[%s02%s] %sCRACK %sMASSAL'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
-	print('%s[%s04%s] %sCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
+	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
 	jh = input(P+'['+P+'●'+P+']  MENU  ')
 	if jh in ['1','01']:
@@ -230,7 +230,7 @@ def menu(my_name,my_id):
 	elif jh in ['2','02']:
 		multidump()
 	elif jh in ['3','03']:
-		subprocess.check_output(["am", "start", "https://chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql"])
+		subprocess.check_output(["am", "start", "chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql"])
 	elif jh in ['4','04']:
 		subprocess.check_output(["am", "start", "wa.me/6285758862225"])
 	elif jh in ['6','06']:
