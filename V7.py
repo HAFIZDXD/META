@@ -140,7 +140,6 @@ bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-    os .system ('clear')
     os.system("git pull")
     print (f"""
 {U}[{H}1{U}]{H} Chat Admin untuk membeli lisensi
