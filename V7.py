@@ -152,7 +152,7 @@ def license():#line:42
 """)#line:49
     OOO00O0OOO00OO00O =input (f"{H}[{H}?{H}]{H} Choose :{K} ")#line:50
     if OOO00O0OOO00OO00O in ['1','01']:#line:51
-      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os.system('xdg-open wa.me/6285758862225?text=bang+beli+lisensi');exit ()#line:52
+      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os.system('xdg-open wa.me/6285758862225?text=assalamualaikum');exit ()#line:52
     elif OOO00O0OOO00OO00O in ['2','02']:#line:53
       O000O000OOO000OOO =input (f"{H}[{U}?{H}]{U} Api Key :{K} ")#line:54
       if len (O000O000OOO000OOO )==0 :#line:55
@@ -163,8 +163,8 @@ def license():#line:42
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
           print (f"{H}[{U}*{H}]{U} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-      print("[•] 50k 1bulan")
-      print("[•] 20k 1minggu")
+      print("[•] 50k 1 bulan")
+      print("[•] 20k 1 minggu")
       print("[•] 100k 1 tahun")
       input("%s[•] TEKAN ENTER"%(h));license()
     else :#line:64
