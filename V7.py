@@ -140,6 +140,11 @@ bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+def license():#line:42
+  try :#line:43
+    os.system("git pull")
+    os .system ('clear')
+    os 
     print (f"""
 {U}[{H}1{U}]{H} Chat Admin untuk membeli lisensi
 {U}[{H}2{U}]{H} Masukan License
@@ -608,5 +613,5 @@ if __name__=='__main__':
 	except:pass
 	try:os.mkdir('/sdcard/V7-DATA/DUMP')
 	except:pass
-	login()
+	license()
 
