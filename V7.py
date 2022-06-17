@@ -224,19 +224,19 @@ def login():
 def login_lagi334():
 	banner()
 	try:
-		cookie=input("%s [•] MASUKKAN COOKIE%s"%(P,P))
+		cookie=input("%s [•] MASUKKAN COOKIE :%s"%(P,P))
 		linex()
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
-		print('LOGIN WAS SUCCESSFULLY');time.sleep(1)
-		print("\n run : python V7.py")
+		print('LOGIN BERHASIL, JALANKAN ULANG');time.sleep(1)
+		print("\n KETIK INI 👉 : python V7.py")
 		os.system('xdg-open wa.me/6285758862225')
 		exit()
 	except Exception as e:
 		os.system("rm -f .cok.txt")
-		print('%s# COOKIES EXPIRED '%(M))
+		print('%s# COOKIES KADALUARSA/AKUN CP '%(M))
 		exit()
 		
 
@@ -247,13 +247,14 @@ def menu(my_name,my_id):
 	banner()
 	linex()
 	print('%s[%s•%s] %s\033[32mOnline'%(P,P,P,P));time.sleep(0.02)
-	print('%s[•] IP  %s'%(P,str(sh['origin'])))
-	print('%s[•] ID  %s'%(P,my_id))
+	print('%s[•] IP :  %s'%(P,str(sh['origin'])))
+	print('%s[•] ID :  %s'%(P,my_id))
 	linex()
 	print('%s[%s01%s] %sCRACK PUBLIK'%(P,P,P,P));time.sleep(0.02)
 	print('%s[%s02%s] %sCRACK %sMASSAL'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
+        print('%s[%s05%s] %s\033[93mNONTON YANDEX%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
 	jh = input(P+'['+P+'â—'+P+']  MENU  ')
 	if jh in ['1','01']:
@@ -264,7 +265,8 @@ def menu(my_name,my_id):
 		os.system('xdg-open https://chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql')
 	elif jh in ['4','04']:
 		os.system('xdg-open https://wa.me/6285758862225?text=bang+hafizd')
-
+        elif jh in ['5','05']:
+		os.system('xdg-open https://Yandex.com)
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
 		print(h+'  ['+h+'â—'+h+']  HOLDâ—â—â—')
