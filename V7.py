@@ -254,7 +254,6 @@ def menu(my_name,my_id):
 	print('%s[%s02%s] %sCRACK %sMASSAL'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
-        print('%s[%s05%s] %s\033[93mNONTON YANDEX%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
 	jh = input(P+'['+P+'â—'+P+']  MENU  ')
 	if jh in ['1','01']:
@@ -265,8 +264,6 @@ def menu(my_name,my_id):
 		os.system('xdg-open https://chat.whatsapp.com/DIfkUz7xqzlDOcnf3xowql')
 	elif jh in ['4','04']:
 		os.system('xdg-open https://wa.me/6285758862225?text=bang+hafizd')
-        elif jh in ['5','05']:
-		os.system('xdg-open https://Yandex.com)
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
 		print(h+'  ['+h+'â—'+h+']  HOLDâ—â—â—')
