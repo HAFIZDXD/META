@@ -187,14 +187,14 @@ def banner():
 ██║░░██║██║░░██║██║░░░░░██║███████╗██████╔╝                
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░   
 
-{kk}╔══════════════════════════════════════════╗
-{kk}║ Creator       : HafizdXD                   {kk}║
-{kk}║ Github        : https://github.com/HafizdXD{kk}║
-{kk}║ Whatsapp      : +6285758862225             {kk}║
-{kk}║ Version       : V7                         {kk}║
-{kk}║ Status SC     : Premium                    {kk}║
-{kk}║ Support Kartu : {H}Indosat,Axis,Telkomsel  {kk}║
-{kk}╚══════════════════════════════════════════╝
+╔══════════════════════════════════════════╗
+║ Creator       : HafizdXD                   ║
+║ Github        : https://github.com/HafizdXD║
+║ Whatsapp      : +6285758862225             ║
+║ Version       : V7                         ║
+║ Status SC     : Premium                    ║
+║ Support Kartu : \x1b[1;92mIndosat,Axis,Telkomsel  ║
+╚══════════════════════════════════════════╝
 
 """%(P))
 
