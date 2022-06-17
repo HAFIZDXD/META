@@ -41,7 +41,6 @@ except Exception as e:
 	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mAlvino_adijaya_xy')
 prox=open('.prox.txt','r').read().splitlines()
 #os.system('rm -rf .prox.txt')
-try:os.system('git pull')
 
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
@@ -163,10 +162,10 @@ def license():#line:42
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
           print (f"{H}[{U}*{H}] Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-      print("[�] 50k 1 bulan")
-      print("[�] 25k 1 minggu")
-      print("[�] 100k permanen")
-      input("%s[�] TEKAN ENTER"%(h));license()
+      print("[�] 50k 1 bulan")
+      print("[�] 25k 1 minggu")
+      print("[�] 100k permanen")
+      input("%s[�] TEKAN ENTER"%(h));license()
     else :#line:64
       exit (f"{U}[{H}!{U}]{h} Wrong Input")#line:65
   except (KeyError ):#line:66
@@ -201,7 +200,7 @@ def banner():
 """%(P))
 
 def linex():
-	print("%s═════════════════════════════════════════════════════════════════�%s\n"%(P,P))
+	print("%s═════════════════════════════════════════════════════════════════�%s\n"%(P,P))
 
 def login():
 	try:
