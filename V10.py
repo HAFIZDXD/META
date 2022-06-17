@@ -193,7 +193,7 @@ def banner():
 ║ Whatsapp      : +6285758862225                 ║
 ║ Version       : V7                             ║
 ║ Status SC     : Premium                        ║
-║ Support Kartu : \x1b[1;92mIndosat,Axis,Telkomsel  ║
+║ Support Kartu : Indosat,Axis,Telkomsel         ║
 ╚═══════════════════════════════════════════╝
 
 """%(P))
