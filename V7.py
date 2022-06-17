@@ -255,7 +255,7 @@ def menu(my_name,my_id):
 	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
-	jh = input(P+'['+P+'PILIH'+P+']  MENU :  ')
+	jh = input(P+'['+P+'•'+P+']  MENU :  ')
 	if jh in ['1','01']:
 		dump_publik()
 	elif jh in ['2','02']:
