@@ -194,11 +194,12 @@ def banner():
 ║ Version      : V7                         ║
 ║ Status SC    : Premium                    ║
 ║ Support Kartu: Indosat,Axis,Telkomsel     ║
+║ Thanks To    : FLAME-XD❤
 ╚═══════════════════════════════════════════╝
 \033[93m
 ADMIN TIDAK BERTANGGUNG JAWAB ATAS KESALAHAN PENGGUNA
 SAAT MEMAKAI TOOLS INI, HARAP GUNAKAN TOOLS INI DENGAN BIJAK!!
-AGAR TIDAK TERJADI HAL-HAL YANG DIINGINKAN
+AGAR TIDAK TERJADI HAL-HAL YANG TIDAK DIINGINKAN
 """%(P))
 
 def linex():
