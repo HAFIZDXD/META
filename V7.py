@@ -191,10 +191,10 @@ def banner():
 ║ Creator      : HafizdXD                   ║
 ║ Github       : https://github.com/HafizdXD║
 ║ Whatsapp     : +6285758862225             ║
-║ Version      : V7                         ║
+║ Version      : V7 BETA                    ║
 ║ Status SC    : Premium                    ║
 ║ Support Kartu: Indosat,Axis,Telkomsel     ║
-║ Thanks To    : FLAME-XD❤
+║ Thanks To    : FLAME-XD❤                 ║
 ╚═══════════════════════════════════════════╝
 \033[93m
 ADMIN TIDAK BERTANGGUNG JAWAB ATAS KESALAHAN PENGGUNA
