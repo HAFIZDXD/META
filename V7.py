@@ -266,7 +266,7 @@ def menu(my_name,my_id):
 		os.system('xdg-open https://wa.me/6285758862225?text=bang+hafizd')
 	elif jh in ['6','06']:
 		os.system("rm -f .cok.txt")
-		print(h+'  ['+h+'â—'+h+']  HOLDâ—â—â—')
+		print(h+'  ['+h+'â—'+h+']  Loading....')
 		time.sleep(1)
 		print('# BERHASIL KELUAR')
 		exit()
