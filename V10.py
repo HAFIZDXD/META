@@ -38,7 +38,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mAlvino_adijaya_xy')
+	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mHafizd_XD_xy')
 prox=open('.prox.txt','r').read().splitlines()
 #os.system('rm -rf .prox.txt')
 
@@ -187,13 +187,14 @@ def banner():
 ██║░░██║██║░░██║██║░░░░░██║███████╗██████╔╝                
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░   
 
-╔══════════════════════════════════════════╗
-║ Creator   : HafizdXD                     ║
-║ Github    : https://github.com/HafizdXD  ║
-║ Whatsapp  : +6285758862225               ║
-║ Version   : V7                           ║
-║ Status SC : Premium                       ║
-╚══════════════════════════════════════════╝
+{kk}╔══════════════════════════════════════════╗
+{kk}║ Creator       : HafizdXD                   {kk}║
+{kk}║ Github        : https://github.com/HafizdXD{kk}║
+{kk}║ Whatsapp      : +6285758862225             {kk}║
+{kk}║ Version       : V7                         {kk}║
+{kk}║ Status SC     : Premium                    {kk}║
+{kk}║ Support Kartu : {H}Indosat,Axis,Telkomsel  {kk}║
+{kk}╚══════════════════════════════════════════╝
 
 """%(P))
 
