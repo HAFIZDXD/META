@@ -195,7 +195,10 @@ def banner():
 ║ Status SC    : Premium                    ║
 ║ Support Kartu: Indosat,Axis,Telkomsel     ║
 ╚═══════════════════════════════════════════╝
-
+\033[93m
+ADMIN TIDAK BERTANGGUNG JAWAB ATAS KESALAHAN PENGGUNA
+SAAT MEMAKAI TOOLS INI, HARAP GUNAKAN TOOLS INI DENGAN BIJAK!!
+AGAR TIDAK TERJADI HAL-HAL YANG DIINGINKAN
 """%(P))
 
 def linex():
@@ -231,7 +234,7 @@ def login_lagi334():
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
 		print('LOGIN BERHASIL, JALANKAN ULANG');time.sleep(1)
-		print("\n KETIK INI 👉 : python V7.py")
+		print("\n KETIK : python V7.py")
 		os.system('xdg-open wa.me/6285758862225')
 		exit()
 	except Exception as e:
@@ -355,7 +358,7 @@ def setting():
 		exit()
 	met = '# METHODE CRACK'
 	sol().print(mark(met, style='green'))
-	ioz = '[01]MBASIC.FACEBOOK.COM\n[02]B-PRO'
+	ioz = '[01]MBASIC-PRO (\033[32mRecomended)\n[02]B-API-PRO (\033[32mRecomended)'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title=' • METHODE • '))
 	hc = input(x+'['+p+'f'+x+']  : ')
