@@ -194,7 +194,7 @@ def banner():
 ║ Version      : V7 BETA                    ║
 ║ Status SC    : Premium                    ║
 ║ Support Kartu: Indosat,Axis,Telkomsel     ║
-║ Thanks To    : FLAME-XD❤                 ║
+║ Thanks To    : FLAME-XD❤                  ║
 ╚═══════════════════════════════════════════╝
 \033[93m
 ADMIN TIDAK BERTANGGUNG JAWAB ATAS KESALAHAN PENGGUNA
